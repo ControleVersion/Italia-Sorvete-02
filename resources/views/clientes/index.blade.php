@@ -1,11 +1,21 @@
 @extends('app')
 
 @section('content')
-    <div class='alert alert-info fade in' data-alert='alert'>
-        <h3>
-                <a href="#">Cadastrado com sucesso!</a>
-        </h3>
 
+    <style>
+        body{ background: #ebebeb; }
+    </style>
+
+
+
+    <div class="row-fluid">
+        @if($errors->any())
+            <ul class="alert alert-error span12">
+                @foreach($errors->all() as $error)
+                    <li style="list-style: none;">{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
     </div>
 
 
@@ -16,16 +26,19 @@
                 <div class="panel-heading">CADASTRAR NOVO CLIENTE</div>
                 <div class="panel-body">
                     <p> <strong>Dados Pessoais</strong></p>
-                    <form role="form" method="post">
+
+
+                    {!! Form::open(['route'=>'clientes.store','method'=>'post', 'role'=>'form']) !!}
+
                         <div class="form-group" style="float: left; margin-right: 20px; width: 70%;">
                             <label class="control-label" for="LabelInputNome">Nome</label>
-                            <input type="text" class="form-control" name="InputNome" id="InputNome" placeholder="Nome completo">
+                            {!! Form::text('nome', null, ['class'=> 'form-control', 'placeholder'=> 'Nome Completo', 'required']) !!}
 
                         </div>
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputCodigoCliente">Código Cliente</label>
-                            <input type="text" class="form-control" name="InputCodigoCliente" id="InputCodigoCliente" placeholder="Código Cliente">
+                            {!! Form::text('codigo_cliente', null, ['class'=> 'form-control', 'maxlength'=>'140','placeholder'=> 'Código Cliente', 'required']) !!}
 
                         </div>
 
@@ -34,13 +47,18 @@
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 70%;">
                             <label class="control-label" for="LabelInputEmail">E-mail</label>
-                            <input type="email" class="form-control" name="InputEmail" id="InputEmail" placeholder="Email">
+
+
+                            {!! Form::text('email', null, ['class'=> 'form-control','maxlength'=>'150', 'placeholder'=> 'E-mail', 'required']) !!}
+
 
                         </div>
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputCPF">CPF</label>
-                            <input type="text" class="form-control" name="InputCPF" id="InputCPF" placeholder="">
+
+                            {!! Form::text('cpf', null, ['class'=> 'form-control','maxlength'=>'14', 'placeholder'=> 'CPF', 'required']) !!}
+
 
                         </div>
 
@@ -48,18 +66,23 @@
                         </div>
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
-                            <label class="control-label" for="LabelInputCPF">Telefone 1</label>
-                            <input type="text" class="form-control" name="InputTelefone1" id="InputTelefone1" placeholder="">
+                            <label class="control-label" for="LabelInput">Telefone 1</label>
+
+                            {!! Form::text('telefone1', null, ['class'=> 'form-control','maxlength'=>'14', 'placeholder'=> '(XX) XXXX-XXXX']) !!}
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
-                            <label class="control-label" for="LabelInputCPF">Telefone 2</label>
-                            <input type="text" class="form-control" name="InputTelefone2" id="InputTelefone2" placeholder="">
+                            <label class="control-label" for="LabelInput">Telefone 2</label>
+
+                            {!! Form::text('telefone2', null, ['class'=> 'form-control','maxlength'=>'14', 'placeholder'=> '(XX) XXXX-XXXX']) !!}
+
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
-                            <label class="control-label" for="LabelInputCPF">Celular</label>
-                            <input type="text" class="form-control" name="InputCelular" id="InputCelular" placeholder="">
+                            <label class="control-label" for="LabelInput">Celular</label>
+
+                            {!! Form::text('celular', null, ['class'=> 'form-control','maxlength'=>'15', 'placeholder'=> '(XX) XXXX-XXXXX', 'required']) !!}
+
 
                         </div>
 
@@ -70,17 +93,23 @@
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputCEP">CEP</label>
-                            <input type="text" class="form-control" name="InputCEP" id="InputCEP" placeholder="">
+
+                            {!! Form::text('cep', null, ['class'=> 'form-control','maxlength'=>'9', 'placeholder'=> 'XXXXX-XXX']) !!}
+
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputRua">Rua</label>
-                            <input type="text" class="form-control" name="InputRua" id="InputRua" placeholder="">
+
+                            {!! Form::text('rua', null, ['class'=> 'form-control','maxlength'=>'15', 'placeholder'=> 'Logradouro']) !!}
+
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
-                            <label class="control-label" for="LabelInputNumero">Celular</label>
-                            <input type="text" class="form-control" name="InputNumero" id="InputNumero" placeholder="">
+                            <label class="control-label" for="LabelInputNumero">Número</label>
+
+                            {!! Form::text('numero', null, ['class'=> 'form-control','maxlength'=>'25', 'placeholder'=> '']) !!}
+
 
                         </div>
 
@@ -89,57 +118,76 @@
 
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputBairro">Bairro</label>
-                            <input type="text" class="form-control" name="InputBairro" id="InputBairro" placeholder="">
+
+                            {!! Form::text('bairro', null, ['class'=> 'form-control','maxlength'=>'150', 'placeholder'=> 'Bairro']) !!}
+
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputRua">Cidade</label>
-                            <input type="text" class="form-control" name="InputRua" id="InputRua" placeholder="">
+
+                            {!! Form::text('cidade', null, ['class'=> 'form-control','maxlength'=>'150', 'placeholder'=> 'Cidade']) !!}
+
 
                         </div>
                         <div class="form-group" style="float: left; margin-right: 20px; width: 25%;">
                             <label class="control-label" for="LabelInputUF">Estado</label>
 
-                            <select type="select" name="InputUF" id="InputUF" class="form-control">
-                                <option value=""> -- </option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espirito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-
-                            </select>
+                            {!! Form::select(
+                                    'estado',
+                                    [
+                                        "0"=>"--",
+                                        "AC"=>'Acre',
+                                        "AL"=>'Alagoas',
+                                        "AP"=>'Amapá',
+                                        "AM"=>'Amazonas',
+                                        "BA"=>'Bahia',
+                                        "CE"=>'Ceará',
+                                        "DF"=>'Distrito Federal',
+                                        "ES"=>'Espirito Santo',
+                                        "GO"=>'Goiás',
+                                        "MA"=>'Maranhão',
+                                        "MS"=>'Mato Grosso do Sul',
+                                        "MT"=>'Mato Grosso',
+                                        "MG"=>'Minas Gerais',
+                                        "PA"=>'Pará',
+                                        "PB"=>'Paraíba',
+                                        "PR"=>'Paraná',
+                                        "PE"=>'Pernambuco',
+                                        "PI"=>'Piauí',
+                                        "RJ"=>'Rio de Janeiro',
+                                        "RN"=>'Rio Grande do Norte',
+                                        "RS"=>'Rio Grande do Sul',
+                                        "RO"=>'Rondônia',
+                                        "RR"=>'Roraima',
+                                        "SC"=>'Santa Catarina',
+                                        "SP"=>'São Paulo',
+                                        "SE"=>'Sergipe',
+                                        "TO"=>'Tocantins'
+                                    ],
+                                    ['class'=> 'form-control']
+                                    ) !!}
 
                         </div>
 
                         <div class="form-group" style="clear: both;">
                         </div>
 
+                        <div>
+                            <div style="float:left;"><a href="javascript:history.back();" class="btn-voltar">&lt; voltar</a></div>
+                            <div style="float:right;">
 
-                        <button type="submit" class="btn btn-yellow">Concluir Cadastro</button>
-                    </form>
+                                {!! Form::submit('Concluir Cadastro', ['style'=>'margin-top: 16px;','class'=>'btn btn-amarelo']) !!}
+                            </div>
+                        </div>
+
+                        {!! Form::close() !!}
+
+
+
+                </div>
+
+
 
                 </div>
             </div>
