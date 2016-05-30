@@ -16,12 +16,12 @@ class CreateClientesTable extends Migration
             $table->increments('id');
             $table->string('codigo_cliente');
             $table->string('nome');
-            $table->string('email');
-            $table->string('cpf');
-            $table->string('telefone1');
-            $table->string('telefone2');
-            $table->string('celular');
-            $table->string('cep');
+            $table->string('email')->unique();
+            $table->string('cpf', 14);
+            $table->string('telefone1', 15);
+            $table->string('telefone2', 15);
+            $table->string('celular', 15);
+            $table->string('cep', 9);
             $table->string('rua');
             $table->string('numero');
             $table->string('bairro');

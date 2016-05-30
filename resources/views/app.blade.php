@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <!-- <link rel="shortcut icon" href="http://simple-form-bootstrap.plataformatec.com.br/favicon.ico" type="image/x-icon"> -->
-    <title>Example application with SimpleForm and Twitter Bootstrap</title>
+    <title>Sorvete Itália</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="{{ asset('/css/application-style.css')}}" media="screen" rel="stylesheet" />
     <link href="{{ asset('/css/style.css')}}" media="screen" rel="stylesheet" />

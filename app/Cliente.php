@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
+
+    protected $table = 'clientes';
     /*
      * CASO NAO FOR ESPECIFICADO TODOS OS CAMPOS DA TABELA NESTA RELACAO, NAO SERA INSERIDO NA TABELA
      * */

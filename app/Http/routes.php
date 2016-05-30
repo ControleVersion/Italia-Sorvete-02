@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 //=========== configuracao de seguraca ================
@@ -25,9 +25,13 @@ Route::controllers([
 Route::get('/auth/logout', function(){
     Auth::logout();
 });
+
+Route::get('/produtos/index', ['as' => 'produtos.index', 'uses'=>'ProdutosController@index']);
+
+Route::get('/produtos/create', ['as' => 'produtos.create', 'uses'=>'ProdutosController@create']);
+Route::post('/produtos/store', ['as' => 'produtos.store', 'uses'=>'ProdutosController@store']);
 //=====================================================
 
-Route::get('teste/{nome}', 'TesteController@index');
 
 Route::get('login', 'UsersController@login');
 
@@ -42,4 +46,6 @@ Route::group(['prefix'=> 'clientes', 'middleware'=>'auth'], function(){
     Route::get('edit/{id}',['as' => 'clientes.editar', 'uses'=>'ClientesController@edit']);
 
     Route::put('update/{id}', ['as' => 'clientes.update', 'uses'=>'ClientesController@update']);
+
+
 });
