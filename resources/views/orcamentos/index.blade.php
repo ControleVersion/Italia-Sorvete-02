@@ -1,7 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: noblind
- * Date: 30/05/16
- * Time: 11:40
- */
+<?php header ('Content-type: text/json; charset=UTF-8'); ?>
+{{
+       json_encode($objeto)
+}}
+
+<?php // var_dump($objeto[0]['total'])  ?>

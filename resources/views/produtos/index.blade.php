@@ -1,10 +1,10 @@
 @extends('app')
 
 @section('content')
-
     <style>
         body{ background: #ebebeb; }
     </style>
+
 
     @if (session('status'))
         <div class="alert alert-success" data-alert='alert'>

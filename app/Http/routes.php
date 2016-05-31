@@ -48,4 +48,15 @@ Route::group(['prefix'=> 'clientes', 'middleware'=>'auth'], function(){
     Route::put('update/{id}', ['as' => 'clientes.update', 'uses'=>'ClientesController@update']);
 
 
+
+});
+
+Route::group(['prefix'=>'/orcamentos', 'middleware'=>'auth'], function(){
+
+    Route::get('index', ['as'=> 'orcamentos.index', 'uses'=> 'OrcamentosController@index']);
+
+});
+
+Route::get('/orcamentos/listar', function () {
+    return view('orcamentos.index');
 });
