@@ -1,46 +1,58 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <link rel="shortcut icon" href="http://simple-form-bootstrap.plataformatec.com.br/favicon.ico" type="image/x-icon">
-    <title>Example application with SimpleForm and Twitter Bootstrap</title>
+    <!-- <link rel="shortcut icon" href="http://simple-form-bootstrap.plataformatec.com.br/favicon.ico" type="image/x-icon"> -->
+    <title>Sorvete Itália</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="{{ asset('/css/application-style.css')}}" media="screen" rel="stylesheet" />
+    <link href="{{ asset('/css/style.css')}}" media="screen" rel="stylesheet" />
     <meta content="authenticity_token" name="csrf-param" />
 
-    <style>
-        .navbar{
-            background-color: #D00000;
-            border-color: #D00000;
-        }
-        .navbar-brand{
-            color: #FFFFFF;
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="pt-br">
 
-        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
-            background-color: #B70000;
-            color: white;
-        }
-        .panel-info>.panel-heading{
-            background-color: #D00000;
-            border-color: #d6d6d6;
-        }
-        .panel-info>.panel-heading{
-            color: #FFFFFF;
-        }
-        .panel-info{
-            border-color: #C7C7C7;
-        }
-        .btn-yellow{
-            color: #F44336;
-            background-color: #FFC107;
-            border-color: #FFC107;
-        }
-        .btn-yellow:hover{
-            background-color: #FAF834;
-        }
+    <!-- INFOS SITE -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="FB.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="">
+
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/img/apple-icon-57x57.png')}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/img/apple-icon-60x60.png')}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/img/apple-icon-72x72.png')}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/apple-icon-76x76.png')}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/img/apple-icon-114x114.png')}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/img/apple-icon-120x120.png')}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/img/apple-icon-144x144.png')}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/img/apple-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/apple-icon-180x180.png')}}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('/img/android-icon-192x192.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/img/favicon-96x96.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/favicon-16x16.png')}}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" href="{{ asset('/img/ms-icon-144x144.png')}}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Dosis:200,300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <style>
+
 
     </style>
+
     <script>
         function removeItemProd(val){
             $('tr#rest'+val).remove();
@@ -56,8 +68,11 @@
         	}, 1000);
         }
     </script>
+
 </head>
-<body style="background-color: rgba(158, 158, 158, 0.18);">
+
+<body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -66,29 +81,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Itália - Sorveteria</a>
+                <a class="navbar-brand" href="{{asset('/clientes/listar')}}"></a>
             </div>
+
+            <div style="float:right; margin-top: 50px;">
+
+                <span class="id-user"> @if( Auth::check() ) Olá, {{ Auth::user()->name }} @endif </span>
+
+                <a href="#" class="lnk-meus-dados">Meus dados</a>
+
+                <a href="{{ url('/auth/logout') }}" class="lnk-sair">Sair</a>
+
+            </div>
+
+            <!--
             <div class="collapse navbar-collapse" id="myNavbar">
+
+
                 <ul class="nav navbar-nav">
-                	
+
                     <li class="active">
                     	<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: #B70000;">
-                    		Clientes     <span class="caret"></span>
+                    		Clientes<span class="caret"></span>
                     	</a>
                     	<ul class="dropdown-menu">
-                            
+
                             <li><a href="{{ url('/clientes') }}">Cadastrar</a></li>
                             <li><a href="{{ url('/clientes/listar') }}">Listar</a></li>
-                            
+
                         </ul>
                     </li>
+
                 </ul>
+
+
                 <ul class="nav navbar-nav navbar-right">
 					
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <span class="glyphicon glyphicon-user"></span>
-                            Meus dados <span class="caret"></span>
+                            <span class="glyphicon glyphicon-user"></span> Meus dados <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Cadastro</a></li>
@@ -96,26 +127,33 @@
                     </li>
                     <li><a href="{{ url('/login') }}"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
                 </ul>
+
+
+
+
             </div>
+            -->
+
         </div>
     </nav>
 
-<div class="container master-container">
-
- 
+    <div class="container master-container">
 
 
-  @yield('content')
 
 
-</div>
+      @yield('content')
 
-<footer class="footer">
-    <div class="container">
-        <p>Copyright 2016 <a href="#"> Sorverteria Itália</a></p>
 
     </div>
-</footer>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright 2016 <a href="#"> Sorverteria Itália</a></p>
+
+        </div>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -134,10 +172,27 @@
                         +'</tr>'
                 );
             });
-
+				//FORMULARIO DE CADASTRO DE CLIENTES
+            $('select[name=estado]').attr('class', 'form-control');
 
         });
         
     </script>
+
+    <!-- SCRIPT PARA GOOGLE FONTS -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Dosis:200,300,400,600,700:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
 </body>
 </html>

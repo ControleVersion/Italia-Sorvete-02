@@ -15,6 +15,28 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call(UserTableSeeder::class);
+        //criando o primeiro usuari
+        factory('App\User')->create(
+            [
+                'name'=> 'robertomelo',
+                'email' => 'robertomelo822@gmail.com',
+                'password' => bcrypt(123456)
+
+            ]
+        );
+
+        //criando o primeiro cliente
+        factory('App\Cliente')->create(
+            [
+                'codigo_cliente' => '123456789',
+                'nome'=> 'Roberto Soares',
+                'email' => 'robertomelo822@gmail.com',
+                'cpf' => '093.230.177-02'
+
+            ]
+        );
+
+        $this->call(UserTableSeeder::class);
 
         Model::reguard();
     }

@@ -1,0 +1,360 @@
+/* API DO GOOGLE PARA FONTS */
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,600,700);
+
+body {
+    background: url(../img/bg-home-administrador.jpg) no-repeat center top;
+}
+
+.section-login-adm {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.section-login-adm .login-box {
+    background: url(../img/box-login.png) no-repeat;
+    width: 519px;
+    height: 685px;
+    margin: 80px auto 0 auto;
+}
+
+.section-login-adm .login-box .texto-chamada {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    padding: 150px 0 0 0;
+}
+
+.section-login-adm .login-box .texto-chamada h1 {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 34px;
+    line-height: 36px;
+    color: #fe3136;
+    font-weight: 700;
+}
+
+.section-login-adm .login-box .texto-chamada p {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7b818a;
+    font-weight: 400;
+    width: 370px;
+    margin: 0 0 35px 70px;
+}
+
+
+.section-login-adm .login-box .longin-nome {
+    width: 355px;
+    height: 58px;
+    background: #f3f3f3 url(../img/ico-login.jpg) no-repeat 25px 20px;
+    padding: 0 0 0 60px;
+    font-family: 'Dosis', Arial, sans-serif;
+    color: #6f7278;
+    font-size: 18px;
+    line-height: 20px;
+
+    -webkit-border-top-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    -moz-border-radius-topright:3px;
+    border-top-right-radius:3px;
+    -webkit-border-bottom-right-radius:0px;
+    -moz-border-radius-bottomright:0px;
+    border-bottom-right-radius:0px;
+    -webkit-border-bottom-left-radius:0px;
+    -moz-border-radius-bottomleft:0px;
+    border-bottom-left-radius:0px;
+}
+
+.section-login-adm .login-box .longin-senha {
+    width: 355px;
+    height: 58px;
+    background: #f3f3f3 url(../img/ico-password.jpg) no-repeat 25px 15px;
+    padding: 0 0 0 60px;
+    font-family: 'Dosis', Arial, sans-serif;
+    color: #6f7278;
+    font-size: 18px;
+    line-height: 20px;
+
+    -webkit-border-top-left-radius:0px;
+    -moz-border-radius-topleft:0px;
+    border-top-left-radius:0px;
+    -webkit-border-top-right-radius:0px;
+    -moz-border-radius-topright:0px;
+    border-top-right-radius:0px;
+    -webkit-border-bottom-right-radius:3px;
+    -moz-border-radius-bottomright:3px;
+    border-bottom-right-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-bottom-left-radius:3px;
+}
+
+
+
+.bt-entrar {
+    -moz-box-shadow: inset 0px 1px 0px 0px #fe8083;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fe8083;
+    box-shadow: inset 0px 1px 0px 0px #fe8083;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe4349), color-stop(1, #fe2c2f) );
+    background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe4349', endColorstr='#fe2c2f');
+    background-color: #fe4349;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-left-radius: 3px;
+
+    border: 1px solid #d0363a;
+    display: inline-block;
+    padding: 15px 0 0 0;
+
+    font-family: 'Dosis', Arial, sans-serif;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 200;
+    line-height: 36px;
+
+    width: 357px;
+    height: 68px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.bt-entrar:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff9194), color-stop(1, #ff696b) );
+    background: -moz-linear-gradient( center top, #ff9194 5%, #ff696b 100% );
+    color: #fff;
+}
+
+.bt-entrar:active {
+    position:relative;
+    top:1px;
+ }
+
+
+.section-login-adm .login-box .input-group {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7b818a;
+    font-weight: 400;
+}
+
+
+.section-login-adm .login-box .form-group {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7b818a;
+    font-weight: 400;
+}
+
+.section-login-adm .login-box .form-group a.esqueceu-senha {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ff0000;
+    font-weight: 400;
+}
+
+
+
+
+
+/* == */
+
+.navbar{
+    background-color: #ff0000;
+    border: 0;
+    height: 117px;
+    display: block;
+    clear: both;
+}
+.navbar-brand{
+    width: 205px;
+    height: 100px;
+    background: url(../img/logo-top-interna-adm.png) no-repeat 45px 0px;
+margin: 15px 0 0 45px;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: #B70000;
+    color: white;
+}
+.panel-info>.panel-heading{
+    background-color: #D00000;
+    border-color: #d6d6d6;
+}
+.panel-info>.panel-heading{
+    color: #FFFFFF;
+}
+.panel-info{
+    border-color: #C7C7C7;
+}
+
+span.id-user {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    float: left;
+    padding: 0 65px 0 0;
+}
+
+a.lnk-meus-dados {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding: 0 10px 0 0;
+}
+a.lnk-meus-dados:hover {
+    color: #fdd1d1;
+}
+
+a.lnk-sair {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    float: left;
+    border-left: 1px solid #fff;
+    padding:0 30px 0 10px;
+}
+a.lnk-sair:hover {
+    color: #fdd1d1;
+}
+
+
+
+/**/
+
+
+.master-container {margin-top: 80px;}
+
+.top-cadastro-clientes {
+    background: #ec2800 url(../img/ico-top-cadastro-cliente.jpg) no-repeat right 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
+    height: 64px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 22px 0 0 55px;
+}
+
+.box-itens {
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.box-itens label {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #030303;
+    font-weight: 300;
+}
+
+.box-itens p {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+}
+
+.btn-voltar {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6b5100;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-amarelo {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffd800), color-stop(1, #ffe96d) );
+    background: -moz-linear-gradient( center top, #ffd800 5%, #ffe96d 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd800', endColorstr='#ffe96d');
+    background: #ffd800;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6b5100;
+    font-weight: 600;
+    padding: 5px 20px 5px 20px;
+    -webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
+    box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
+}
+
+.btn-amarelo:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffdf2e), color-stop(1, #fef09f) );
+    background: -moz-linear-gradient( center top, #ffdf2e 5%, #fef09f 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf2e', endColorstr='#fef09f');
+    background: #fef09f;
+    color: #896b0e;
+}
+
+
