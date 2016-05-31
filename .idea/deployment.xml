@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Bloguer">
+    <serverData>
+      <paths name="Bloguer">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="www/SORVETE_ITALIA/Italia-Sorvete-02" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
