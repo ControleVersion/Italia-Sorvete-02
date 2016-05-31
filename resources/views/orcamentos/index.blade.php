@@ -3,4 +3,4 @@
        json_encode($objeto)
 }}
 
-<?php // var_dump($objeto[0]['total'])  ?>
+<?php /* var_dump($objeto[0]['total']) */ ?>
