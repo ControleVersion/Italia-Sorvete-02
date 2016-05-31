@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d4f9f6f-b8c2-4444-9a9a-247b0cacd675" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrcamentosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/orcamentos/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/produtos/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/produtos/index.blade.php" />
-    </list>
+    <list default="true" id="6d4f9f6f-b8c2-4444-9a9a-247b0cacd675" name="Default" comment="" />
     <ignored path="Italia-Sorvete-02.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -165,8 +158,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="463" />
-    <option name="y" value="37" />
+    <option name="x" value="67" />
+    <option name="y" value="23" />
     <option name="width" value="1302" />
     <option name="height" value="1003" />
   </component>
@@ -533,15 +526,15 @@
       <workItem from="1464356630411" duration="783000" />
       <workItem from="1464368949561" duration="13145000" />
       <workItem from="1464615531166" duration="9741000" />
-      <workItem from="1464715036329" duration="205000" />
+      <workItem from="1464715036329" duration="369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47658000" />
+    <option name="totallyTimeSpent" value="47822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="463" y="37" width="1302" height="1003" extended-state="0" />
+    <frame x="67" y="23" width="1302" height="1003" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
