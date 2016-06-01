@@ -5,6 +5,10 @@ body {
     background: url(../img/bg-home-administrador.jpg) no-repeat center top;
 }
 
+
+
+
+
 .section-login-adm {
     overflow: hidden;
     width: 100%;
@@ -17,7 +21,7 @@ body {
     background: url(../img/box-login.png) no-repeat;
     width: 519px;
     height: 685px;
-    margin: 80px auto 0 auto;
+    margin: 0 auto;
 }
 
 .section-login-adm .login-box .texto-chamada {
@@ -176,7 +180,7 @@ body {
 
 
 /* == */
-
+/*
 .navbar{
     background-color: #ff0000;
     border: 0;
@@ -205,8 +209,37 @@ margin: 15px 0 0 45px;
 .panel-info{
     border-color: #C7C7C7;
 }
+*/
 
-span.id-user {
+.section-top-navegacao {
+    background: #ee2801;
+    display: block;
+    position: fixed;
+    min-height: 117px;
+    overflow: hidden;
+    width: 100%;
+    top:0;
+    padding:0;
+    z-index: 10;
+}
+
+.section-top-navegacao h1 {
+    display: block;
+    float: left;
+    background: url(../img/logo-top-interna-adm.jpg) no-repeat;
+    width: 137px;
+    height: 117px;
+    text-indent: -9999px;
+    padding:0;
+    margin:0 0 0 35px;
+}
+
+.section-top-navegacao .links-controles-adm {
+    float:right;
+    margin-top: 50px;
+}
+
+.section-top-navegacao .links-controles-adm span.id-user {
     font-family: 'Dosis', Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -217,7 +250,7 @@ span.id-user {
     padding: 0 65px 0 0;
 }
 
-a.lnk-meus-dados {
+.section-top-navegacao .links-controles-adm a.lnk-meus-dados {
     font-family: 'Dosis', Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -228,11 +261,11 @@ a.lnk-meus-dados {
     float: left;
     padding: 0 10px 0 0;
 }
-a.lnk-meus-dados:hover {
+.section-top-navegacao .links-controles-adm a.lnk-meus-dados:hover {
     color: #fdd1d1;
 }
 
-a.lnk-sair {
+.section-top-navegacao .links-controles-adm a.lnk-sair {
     font-family: 'Dosis', Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
@@ -244,7 +277,7 @@ a.lnk-sair {
     border-left: 1px solid #fff;
     padding:0 30px 0 10px;
 }
-a.lnk-sair:hover {
+.section-top-navegacao .links-controles-adm a.lnk-sair:hover {
     color: #fdd1d1;
 }
 
@@ -252,8 +285,20 @@ a.lnk-sair:hover {
 
 /**/
 
+.section-conteudo-interno {
+    margin-top: 80px;
+}
 
-.master-container {margin-top: 80px;}
+
+
+
+
+
+
+
+
+
+/*.master-container {margin-top: 80px;}*/
 
 .top-cadastro-clientes {
     background: #ec2800 url(../img/ico-top-cadastro-cliente.jpg) no-repeat right 10px;
@@ -279,6 +324,35 @@ a.lnk-sair:hover {
     padding: 22px 0 0 55px;
 }
 
+.top-administrador {
+    background: #ec2800 url(../img/ico-top-administrador.jpg) no-repeat right 10px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
+    height: 64px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 22px 0 0 55px;
+}
+
+
+
+/* ========== */
+
+
 .box-itens {
     -webkit-border-top-left-radius: 0px;
     -moz-border-radius-topleft: 0px;
@@ -294,7 +368,7 @@ a.lnk-sair:hover {
     border-bottom-left-radius: 10px;
     background: #fff;
     overflow: hidden;
-    padding: 50px;
+    /*padding: 50px;*/
 }
 
 .box-itens label {
@@ -310,7 +384,7 @@ a.lnk-sair:hover {
     font-size: 24px;
     line-height: 20px;
     color: #000;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .btn-voltar {
@@ -323,10 +397,14 @@ a.lnk-sair:hover {
 }
 
 .btn-amarelo {
-    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffd800), color-stop(1, #ffe96d) );
-    background: -moz-linear-gradient( center top, #ffd800 5%, #ffe96d 100% );
+    -moz-box-shadow: 0px 10px 0px 0px #000;
+    -webkit-box-shadow: 0px 10px 0px 0px #000;
+    box-shadow: 0px 10px 0px 0px #000;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffd800), color-stop(1, #ffe96d) );
+    background:-moz-linear-gradient( center top, #ffd800 5%, #ffe96d 100% );
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd800', endColorstr='#ffe96d');
-    background: #ffd800;
+    background-color:#ffd800;
+
     -moz-border-radius-topleft: 5px;
     border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -344,9 +422,10 @@ a.lnk-sair:hover {
     color: #6b5100;
     font-weight: 600;
     padding: 5px 20px 5px 20px;
-    -webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
-    box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.30);
+
+    -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.30);
+    -moz-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.30);
+    box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.30);
 }
 
 .btn-amarelo:hover {
@@ -356,5 +435,1557 @@ a.lnk-sair:hover {
     background: #fef09f;
     color: #896b0e;
 }
+
+
+/* ====== */
+
+footer {
+    background: url(../img/bg-internas.jpg) no-repeat;
+    height: 310px;
+}
+
+
+/* ====== */
+
+
+.box-busca {
+    background: #f3a600;
+    min-height: 55px;
+    overflow: hidden;
+    margin: 30px 5% 30px 5%;
+}
+
+.box-busca label {
+    display: block;
+    float:left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.box-busca .form-busca {
+    width: 203px;
+    height: 39px;
+    background: #fff;
+    border-radius: 0px;
+    border: 0px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #777;
+    font-weight: 300;
+}
+
+
+.box-busca a.lnk-cadastrar-novo-cliente {
+    background: url(../img/ico-cadastrar-novo-cliente.jpg) no-repeat right top;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 40px 0 0;
+}
+.box-busca a.lnk-cadastrar-novo-cliente:hover {
+    text-decoration: underline;
+}
+
+.box-busca .lbl-codigo-cliente {
+    display: block;
+    float: left;
+    padding: 18px 15px 0 40px;
+}
+
+.box-busca .lbl-cmp-codigo {
+    display: block;
+    float: left;
+    padding: 8px 0 0 0; width: 265px;
+}
+
+.box-busca .lbl-controles {
+    display: block;
+    float: right;
+    padding: 18px 20px 0 0;
+}
+
+
+
+
+/* =========================== */
+
+
+
+
+.listagem-clientes {
+    overflow: hidden;
+    margin: 30px 5% 30px 5%;
+}
+
+
+.panel-heading {
+    background: #fff;
+    height: 80px;
+    border-bottom: 1px solid #ededed;
+}
+
+
+
+
+.listagem-clientes .cmp-nm-cliente {
+    display: block;
+    float: left;
+    padding: 0 0 0 0;
+}
+
+.listagem-clientes .cmp-nm-cliente a.nm-cliente {
+    background: 0;
+    float: left;
+    text-decoration: none;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+}
+.listagem-clientes .cmp-nm-cliente a.nm-cliente:hover {
+    text-decoration: none;
+    color: #afafaf;
+}
+
+
+
+.listagem-clientes .cmp-controle-cliente {
+    display: block;
+    float: right;
+}
+
+
+.listagem-clientes .cmp-controle-cliente a.lnk-editar-cadastro {
+    display: block;
+    float: left;
+    background: url(../img/ico-editar.jpg) no-repeat right top;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 25px 0 0;
+    margin: 24px 60px 0 0;
+}
+.listagem-clientes .cmp-controle-cliente a.lnk-editar-cadastro:hover {
+    text-decoration: none;
+    color: #afafaf;
+}
+
+
+.listagem-clientes .cmp-controle-cliente a.lnk-adicionar-cadastro {
+    display: block;
+    float: left;
+    background: url(../img/ico-adicionar.jpg) no-repeat right 1px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0 25px 0 0;
+    margin: 24px 0 0 0;
+}
+.listagem-clientes .cmp-controle-cliente a.lnk-adicionar-cadastro:hover {
+    text-decoration: none;
+    color: #afafaf;
+}
+
+
+.panel-heading {
+    padding: 0 0 0 0;
+    margin: -15px 0 0 0;
+}
+
+.panel-body {
+    padding: 0 0 0 0;
+}
+
+
+.box-escolha-produtos {
+    background: #d0d0d0;
+    height: 110px;
+    margin: 0 0 10px 0;
+}
+
+
+.box-escolha-produtos .lbl-escolha-produto {
+    display: block;
+    float: left;
+    padding: 45px 15px 0 40px;
+}
+
+.box-escolha-produtos .lbl-frm-busca-produto {
+    display: block;
+    float: left;
+    padding: 35px 0 0 0;
+    width: 369px;
+}
+
+.box-escolha-produtos .lbl-quantidade {
+    display: block;
+    float: left;
+    padding: 45px 0 0 30px;
+}
+
+.box-escolha-produtos .lbl-frm-quantidade {
+    display: block;
+    float: left;
+    padding: 35px 15px 0 20px;
+}
+
+.box-escolha-produtos .lbl-adicionar-produto {
+    display: block;
+    float: right;
+    padding: 40px 25px 0 0;
+}
+
+
+
+
+
+.box-escolha-produtos label {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 600;
+}
+
+.box-escolha-produtos .cmp-selecione {
+    width: 369px;
+    height: 39px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+
+
+.box-escolha-produtos .cmp-selecione .btn-default {
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    width: 369px;
+    height: 40px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.box-escolha-produtos .cmp-selecione .btn-default:hover {
+    background: #fff;
+}
+
+
+.box-escolha-produtos .form-quantidade {
+    width: 70px;
+    height: 40px;
+    background: #fff;
+    border-radius: 0px;
+    border: 0px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+}
+
+
+
+
+/**/
+
+
+
+.box-produtos-escolhidos {
+    background: #f3f3f3;
+    min-height: 110px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.box-produtos-escolhidos .tb-cbl-produtos {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 35px 0 25px 30px;
+    width: 368px;
+}
+
+.box-produtos-escolhidos .tb-cbl-preco {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 35px 0 25px 0;
+    width: 201px;
+}
+
+.box-produtos-escolhidos .tb-cbl-preco span {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.box-produtos-escolhidos .tb-cbl-quantidade {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 35px 0 25px 0;
+}
+
+div.listagem-produtos {
+    display: block;
+    width: 970px;
+    height: 220px;
+    overflow-y: scroll;
+    margin: 0 0 0 30px;
+    border-bottom: 1px solid #fff;
+}
+
+div.listagem-produtos-conteudo {
+    min-height: 500px;
+    overflow: hidden;
+}
+
+
+
+div::-webkit-scrollbar{width: 8px;}
+
+div::-webkit-scrollbar-thumb{background-color: #ff0000; border-radius: 0;}
+div::-webkit-scrollbar-thumb:hover{background-color: #f67a7a;}
+
+div::-webkit-scrollbar-track{background: url(../img/bg-scroll.jpg);}
+
+
+
+div.listagem-produtos-conteudo .linha-itens {
+    border-top: 1px solid #fff;
+    height: 52px;
+    display: block;
+    clear: both;
+}
+
+div.listagem-produtos-conteudo .linha-itens .it-nome {
+    display: block;
+    float:left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 300;
+    padding: 20px 0 15px 0;
+    width: 369px;
+}
+
+div.listagem-produtos-conteudo .linha-itens .it-preco {
+    display: block;
+    float:left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    padding: 20px 0 15px 0;
+    width: 201px;
+}
+
+div.listagem-produtos-conteudo .linha-itens .it-quantidade {
+    display: block;
+    float:left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    padding: 20px 0 15px 0;
+    width: 224px;
+}
+div.listagem-produtos-conteudo .linha-itens .it-quantidade span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+div.listagem-produtos-conteudo .linha-itens .it-excluir {
+    display: block;
+    float:left;
+    padding: 20px 0 15px 0;
+}
+div.listagem-produtos-conteudo .linha-itens .it-excluir a {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ff0000;
+    font-weight: 600;
+    text-decoration: none;
+}
+div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
+    text-decoration: underline;
+}
+
+
+.cmp-soma-total {
+    display: block;
+}
+.cmp-soma-total span.valor {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    float: right;
+    padding: 30px 50px 30px 0;
+}
+
+.cmp-soma-total span span {
+    font-size: 22px;
+}
+
+.boxbt-enviar-pedido {
+    display: block;
+    float: right;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+.box-cadastro-novos-clientes {
+    display: block;
+    margin: 10px 0 0 65px;
+}
+
+.box-cadastro-novos-clientes span.tit-secao {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    display: block;
+    clear: both;
+    padding: 50px 0 40px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario {
+    display: block;
+    clear: both;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .frm-cadastro-clientes {
+    border-radius: 0;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-nome {
+    display: block;
+    float: left;
+    width: 569px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-codigo-cliente {
+    display: block;
+    float: left;
+    width: 367px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-email {
+    display: block;
+    float: left;
+    width: 569px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-cpf {
+    display: block;
+    float: left;
+    width: 367px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-telefone1 {
+    display: block;
+    float: left;
+    width: 285px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-telefone2 {
+    display: block;
+    float: left;
+    width: 285px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-celular {
+    display: block;
+    float: left;
+    width: 285px;
+    padding: 0 30px 30px 0;
+}
+
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-cep {
+    display: block;
+    float: left;
+    width: 270px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-rua {
+    display: block;
+    float: left;
+    width: 470px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-numero {
+    display: block;
+    float: left;
+    width: 170px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-bairro {
+    display: block;
+    float: left;
+    width: 285px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-cidade {
+    display: block;
+    float: left;
+    width: 368px;
+    padding: 0 30px 30px 0;
+}
+
+.box-cadastro-novos-clientes .campos-formulario .cmp-uf {
+    display: block;
+    float: left;
+    width: 200px;
+    padding: 0 30px 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+/* IPAD */
+@media screen and (max-width: 769px) {
+
+    .section-top-navegacao {
+        min-height: 50px;
+    }
+
+    .section-top-navegacao h1 {
+        background: url(../img/logo-top-interna-adm-mobile.jpg) no-repeat;
+        width: 87px;
+        height: 71px;
+        margin:0 0 0 10px;
+    }
+
+    .section-top-navegacao .links-controles-adm {
+        margin-top: 20px;
+    }
+
+    .section-top-navegacao .links-controles-adm span.id-user {
+        font-size: 14px;
+        padding: 0 30px 0 0;
+    }
+
+    .section-top-navegacao .links-controles-adm a.lnk-meus-dados {
+        font-size: 14px;
+    }
+
+    .section-top-navegacao .links-controles-adm a.lnk-sair {
+        font-size: 14px;
+    }
+
+
+
+
+    .box-escolha-produtos {
+        background: #d0d0d0;
+        height: 150px;
+        margin: 0 0 10px 0;
+    }
+
+    .box-escolha-produtos .cmp-selecione .btn-default {
+        font-size: 16px;
+        width: 400px;
+    }
+
+    .box-escolha-produtos .lbl-escolha-produto {
+        padding: 30px 15px 0 15px;
+    }
+
+    .box-escolha-produtos .lbl-frm-busca-produto {
+        padding: 20px 0 0 0;
+        width: 400px;
+    }
+
+    .box-escolha-produtos .lbl-quantidade {
+        padding: 25px 0 0 55px;
+    }
+
+    .box-escolha-produtos .lbl-frm-quantidade {
+        padding: 15px 15px 0 15px;
+    }
+
+    .box-escolha-produtos .lbl-adicionar-produto {
+        padding: 22px 300px 0 0;
+    }
+
+
+
+
+    .box-produtos-escolhidos .tb-cbl-produtos {
+        margin: 35px 0 25px 1px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco {
+        margin: 35px 0 25px 10px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-quantidade {
+        margin: 35px 0 25px 10px;
+        padding: 0;
+    }
+
+
+
+
+    div.listagem-produtos {
+        display: block;
+        width: 630px;
+        height: 220px;
+        overflow-y: scroll;
+        margin: 0 0 0 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    div.listagem-produtos-conteudo {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens {
+        border-top: 1px solid #fff;
+        height: 52px;
+        display: block;
+        clear: both;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-nome {
+        padding: 20px 0 15px 10px;
+        width: 252px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-preco {
+        padding: 20px 0 15px 0;
+        width: 165px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade {
+        padding: 20px 0 15px 0;
+        width: 130px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-excluir {
+        display: block;
+        float:left;
+        padding: 20px 0 15px 0;
+    }
+
+
+
+
+
+
+    .cmp-soma-total {
+        display: block;
+    }
+    .cmp-soma-total span.valor {
+        padding: 30px 20px 30px 0;
+    }
+
+    .boxbt-enviar-pedido {
+        display: block;
+        float: right;
+        margin: 0 0 50px 0;
+    }
+
+
+
+}
+
+
+
+/* IPHONE 6 PLUS */
+@media screen and (max-width: 500px) {
+
+    .top-administrador {
+        background: #ec2800;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 60px;
+    }
+
+
+
+
+
+
+    .box-busca .lbl-codigo-cliente {
+        padding: 18px 15px 0 110px;
+    }
+
+    .box-busca .lbl-cmp-codigo {
+        padding: 8px 0 0 70px; width: 265px;
+    }
+
+    .box-busca .lbl-controles {
+        padding: 18px 85px 20px 0;
+    }
+
+
+
+
+    .listagem-clientes .cmp-nm-cliente {
+        display: block;
+        float: left;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .listagem-clientes .cmp-nm-cliente a.nm-cliente {
+        font-size: 18px;
+
+    }
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-editar-cadastro {
+        padding: 0;
+        margin: 24px -20px 0 0;
+        text-indent: -9999px;
+    }
+
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-adicionar-cadastro {
+        padding: 0;
+        margin: 24px 0 0 0;
+        text-indent: -9999px;
+    }
+
+
+
+
+    .box-escolha-produtos {
+        background: #d0d0d0;
+        height: 250px;
+        margin: 0 0 10px 0;
+    }
+
+    .box-escolha-produtos .cmp-selecione .btn-default {
+        font-size: 16px;
+        width: 320px;
+    }
+
+    .box-escolha-produtos .lbl-escolha-produto {
+        padding: 15px 15px 0 100px;
+    }
+
+    .box-escolha-produtos .lbl-frm-busca-produto {
+        padding: 10px 0 0 10px;
+        width: 250px;
+    }
+
+    .box-escolha-produtos .lbl-quantidade {
+        padding: 25px 0 0 90px;
+    }
+
+    .box-escolha-produtos .lbl-frm-quantidade {
+        padding: 15px 15px 0 20px;
+    }
+
+    .box-escolha-produtos .lbl-adicionar-produto {
+        padding: 40px 120px 0 0;
+    }
+
+
+
+
+    .box-produtos-escolhidos .tb-cbl-produtos {
+        font-size: 12px;
+        margin: 35px 0 25px 1px;
+        width: 110px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        width: 50px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco span {
+        font-size: 10px;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-quantidade {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        padding: 10px 0 0 20px;
+    }
+
+
+
+
+    div.listagem-produtos {
+        display: block;
+        width: 330px;
+        height: 220px;
+        overflow-y: scroll;
+        margin: 0 0 0 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    div.listagem-produtos-conteudo {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens {
+        border-top: 1px solid #fff;
+        height: 52px;
+        display: block;
+        clear: both;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-nome {
+        font-size: 12px;
+        padding: 20px 0 15px 10px;
+        width: 120px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-preco {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 80px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 70px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-excluir {
+        display: block;
+        float:left;
+        padding: 20px 0 15px 0;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a {
+        display: block;
+        width: 18px;
+        height: 19px;
+        background: url(../img/ico-excluir-mobile.png);
+        text-indent: -99999px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    .cmp-soma-total {
+        display: block;
+    }
+    .cmp-soma-total span.valor {
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        padding: 30px 0 30px 20px;
+    }
+
+    .cmp-soma-total span span {
+        font-size: 22px;
+        display: block;
+    }
+
+    .boxbt-enviar-pedido {
+        display: block;
+        float: left;
+        margin: 0 0 50px 110px;
+    }
+
+
+
+
+}
+
+
+
+/* IPHONE 6 */
+@media screen and (max-width: 380px) {
+
+    .top-administrador {
+        background: #ec2800;
+        font-size: 24px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 60px;
+    }
+
+
+
+
+
+    .box-busca .lbl-codigo-cliente {
+        padding: 18px 15px 0 90px;
+    }
+
+    .box-busca .lbl-cmp-codigo {
+        padding: 8px 0 0 55px; width: 265px;
+    }
+
+    .box-busca .lbl-controles {
+        padding: 18px 65px 20px 0;
+    }
+
+
+
+
+    .listagem-clientes .cmp-nm-cliente {
+        display: block;
+        float: left;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .listagem-clientes .cmp-nm-cliente a.nm-cliente {
+        font-size: 18px;
+
+    }
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-editar-cadastro {
+        padding: 0;
+        margin: 24px -20px 0 0;
+        text-indent: -9999px;
+    }
+
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-adicionar-cadastro {
+        padding: 0;
+        margin: 24px 0 0 0;
+        text-indent: -9999px;
+    }
+
+
+
+
+
+    .box-escolha-produtos {
+        background: #d0d0d0;
+        height: 250px;
+        margin: 0 0 10px 0;
+    }
+
+    .box-escolha-produtos .cmp-selecione .btn-default {
+        font-size: 16px;
+        width: 280px;
+    }
+
+    .box-escolha-produtos .lbl-escolha-produto {
+        padding: 15px 15px 0 85px;
+    }
+
+    .box-escolha-produtos .lbl-frm-busca-produto {
+        padding: 10px 0 0 10px;
+        width: 250px;
+    }
+
+    .box-escolha-produtos .lbl-quantidade {
+        padding: 25px 0 0 60px;
+    }
+
+    .box-escolha-produtos .lbl-frm-quantidade {
+        padding: 15px 15px 0 20px;
+    }
+
+    .box-escolha-produtos .lbl-adicionar-produto {
+        padding: 40px 100px 0 0;
+    }
+
+
+
+
+    .box-produtos-escolhidos .tb-cbl-produtos {
+        font-size: 12px;
+        margin: 35px 0 25px 1px;
+        width: 110px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        width: 50px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco span {
+        font-size: 10px;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-quantidade {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        padding: 10px 0 0 20px;
+    }
+
+
+
+
+    div.listagem-produtos {
+        display: block;
+        width: 305px;
+        height: 220px;
+        overflow-y: scroll;
+        margin: 0 0 0 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    div.listagem-produtos-conteudo {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens {
+        border-top: 1px solid #fff;
+        height: 52px;
+        display: block;
+        clear: both;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-nome {
+        font-size: 12px;
+        padding: 20px 0 15px 10px;
+        width: 120px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-preco {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 80px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 70px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-excluir {
+        display: block;
+        float:left;
+        padding: 20px 0 15px 0;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a {
+        display: block;
+        width: 18px;
+        height: 19px;
+        background: url(../img/ico-excluir-mobile.png);
+        text-indent: -99999px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    .cmp-soma-total {
+        display: block;
+    }
+    .cmp-soma-total span.valor {
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        padding: 30px 0 30px 20px;
+    }
+
+    .cmp-soma-total span span {
+        font-size: 22px;
+        display: block;
+    }
+
+    .boxbt-enviar-pedido {
+        display: block;
+        float: left;
+        margin: 0 0 50px 95px;
+    }
+
+
+
+}
+
+
+
+/* IPHOME 5 */
+@media screen and (max-width: 355px) {
+
+    .section-top-navegacao .links-controles-adm {
+        margin-top: 20px;
+    }
+
+    .section-top-navegacao .links-controles-adm span.id-user {
+        font-size: 12px;
+        padding: 0 10px 0 0;
+    }
+
+    .section-top-navegacao .links-controles-adm a.lnk-meus-dados {
+        font-size: 12px;
+    }
+
+    .section-top-navegacao .links-controles-adm a.lnk-sair {
+        font-size: 12px;
+        padding:0 10px 0 10px;
+    }
+
+
+
+
+
+    .top-administrador {
+        background: #ec2800;
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 50px;
+    }
+
+
+
+
+    .box-busca .lbl-codigo-cliente {
+        padding: 18px 15px 0 70px;
+    }
+
+    .box-busca .lbl-cmp-codigo {
+        padding: 8px 0 0 28px; width: 265px;
+    }
+
+    .box-busca .lbl-controles {
+        padding: 18px 40px 20px 0;
+    }
+
+
+
+
+    .listagem-clientes .cmp-nm-cliente {
+        display: block;
+        float: left;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .listagem-clientes .cmp-nm-cliente a.nm-cliente {
+        font-size: 18px;
+
+    }
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-editar-cadastro {
+        padding: 0;
+        margin: 24px -20px 0 0;
+        text-indent: -9999px;
+    }
+
+
+    .listagem-clientes .cmp-controle-cliente a.lnk-adicionar-cadastro {
+        padding: 0;
+        margin: 24px 0 0 0;
+        text-indent: -9999px;
+    }
+
+
+
+
+    .box-escolha-produtos {
+        background: #d0d0d0;
+        height: 250px;
+        margin: 0 0 10px 0;
+    }
+
+    .box-escolha-produtos .cmp-selecione .btn-default {
+        font-size: 16px;
+        width: 240px;
+    }
+
+    .box-escolha-produtos .lbl-escolha-produto {
+        padding: 15px 15px 0 65px;
+    }
+
+    .box-escolha-produtos .lbl-frm-busca-produto {
+        padding: 10px 0 0 10px;
+        width: 250px;
+    }
+
+    .box-escolha-produtos .lbl-quantidade {
+        display: block;
+        float: left;
+        padding: 25px 0 0 40px;
+    }
+
+    .box-escolha-produtos .lbl-frm-quantidade {
+        display: block;
+        float: left;
+        padding: 15px 15px 0 20px;
+    }
+
+    .box-escolha-produtos .lbl-adicionar-produto {
+        padding: 40px 80px 0 0;
+    }
+
+
+
+
+    .box-produtos-escolhidos .tb-cbl-produtos {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        width: 70px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        width: 80px;
+        text-align: center;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-preco span {
+        font-size: 10px;
+    }
+
+    .box-produtos-escolhidos .tb-cbl-quantidade {
+        font-size: 12px;
+        margin: 35px 0 25px 10px;
+        padding: 10px 0 0 0;
+    }
+
+
+
+
+    div.listagem-produtos {
+        display: block;
+        width: 260px;
+        height: 220px;
+        overflow-y: scroll;
+        margin: 0 0 0 5px;
+        border-bottom: 1px solid #fff;
+    }
+
+    div.listagem-produtos-conteudo {
+        min-height: 500px;
+        overflow: hidden;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens {
+        border-top: 1px solid #fff;
+        height: 52px;
+        display: block;
+        clear: both;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-nome {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 100px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-preco {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 80px;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade {
+        font-size: 12px;
+        padding: 20px 0 15px 0;
+        width: 50px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-quantidade span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    div.listagem-produtos-conteudo .linha-itens .it-excluir {
+        display: block;
+        float:left;
+        padding: 20px 0 15px 0;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a {
+        display: block;
+        width: 18px;
+        height: 19px;
+        background: url(../img/ico-excluir-mobile.png);
+        text-indent: -99999px;
+    }
+    div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
+        text-decoration: underline;
+    }
+
+
+
+
+
+    .cmp-soma-total {
+        display: block;
+    }
+    .cmp-soma-total span.valor {
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        padding: 30px 0 30px 20px;
+    }
+
+    .cmp-soma-total span span {
+        font-size: 22px;
+        display: block;
+    }
+
+    .boxbt-enviar-pedido {
+        display: block;
+        float: left;
+        margin: 0 0 50px 80px;
+    }
+
+
+
+
+
+    .box-cadastro-novos-clientes {
+        display: block;
+        margin: 10px 0 0 10px;
+    }
+
+    .box-cadastro-novos-clientes span.tit-secao {
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 600;
+        display: block;
+        clear: both;
+        padding: 50px 0 40px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario {
+        display: block;
+        clear: both;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .frm-cadastro-clientes {
+        border-radius: 0;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-nome {
+        display: block;
+        float: left;
+        width: 569px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-codigo-cliente {
+        display: block;
+        float: left;
+        width: 367px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-email {
+        display: block;
+        float: left;
+        width: 569px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cpf {
+        display: block;
+        float: left;
+        width: 367px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone1 {
+        display: block;
+        float: left;
+        width: 285px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone2 {
+        display: block;
+        float: left;
+        width: 285px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-celular {
+        display: block;
+        float: left;
+        width: 285px;
+        padding: 0 30px 30px 0;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cep {
+        display: block;
+        float: left;
+        width: 270px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-rua {
+        display: block;
+        float: left;
+        width: 470px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-numero {
+        display: block;
+        float: left;
+        width: 170px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-bairro {
+        display: block;
+        float: left;
+        width: 285px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cidade {
+        display: block;
+        float: left;
+        width: 368px;
+        padding: 0 30px 30px 0;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-uf {
+        display: block;
+        float: left;
+        width: 200px;
+        padding: 0 30px 30px 0;
+    }
+
+
+
+}
+
+
+
+
+
+
 
 

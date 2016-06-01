@@ -9,6 +9,8 @@
     <link href="{{ asset('/css/style.css')}}" media="screen" rel="stylesheet" />
     <meta content="authenticity_token" name="csrf-param" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="pt-br">
@@ -48,10 +50,10 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Dosis:200,300,400,600,700' rel='stylesheet' type='text/css'>
 
-    <style>
+    <!-- ARQUIVOS PARA OS SELECTS -->
+    <script src="{{ asset('/dist/js/bootstrap-select.js')}}"></script>
+    <link rel="stylesheet" href="{{ asset('/dist/css/bootstrap-select.css')}}">
 
-
-    </style>
 
     <script>
         function removeItemProd(val){
@@ -59,7 +61,7 @@
         }
         function hideNavBar(){
         	
-        	var navBar = document.getElementsByClassName('navbar');
+        	var navBar = document.getElementsByClassName('section-top-navegacao');
         	navBar[0].style.visibility = "hidden";
         	var footerBar = document.getElementsByClassName('footer').innerHTML = "";
         	//footerBar.style.visibility = "hidden";
@@ -73,84 +75,45 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"></a>
-            </div>
+    <header class="section-top-navegacao">
 
-            <div style="float:right; margin-top: 50px;">
+        <h1>Sorvete Itália</h1>
 
-                <span class="id-user">Olá, Administrador</span>
+        <div class="links-controles-adm">
 
-                <a href="#" class="lnk-meus-dados">Meus dados</a>
+            <span class="id-user">Olá, Administrador</span>
 
-                <a href="#" class="lnk-sair">Sair</a>
+            <a href="#" class="lnk-meus-dados">Meus dados</a>
 
-            </div>
-
-            <!--
-            <div class="collapse navbar-collapse" id="myNavbar">
-
-
-                <ul class="nav navbar-nav">
-
-                    <li class="active">
-                    	<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color: #B70000;">
-                    		Clientes<span class="caret"></span>
-                    	</a>
-                    	<ul class="dropdown-menu">
-
-                            <li><a href="{{ url('/clientes') }}">Cadastrar</a></li>
-                            <li><a href="{{ url('/clientes/listar') }}">Listar</a></li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-
-
-                <ul class="nav navbar-nav navbar-right">
-					
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <span class="glyphicon glyphicon-user"></span> Meus dados <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Cadastro</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="{{ url('/login') }}"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
-                </ul>
-
-
-
-
-            </div>
-            -->
+            <a href="{{ url('/login') }}" class="lnk-sair">Sair</a>
 
         </div>
-    </nav>
 
-    <div class="container master-container">
-
+    </header>
 
 
 
-      @yield('content')
+    <section class="section-conteudo-interno">
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0;">
+
+                @yield('content')
+
+            </div>
+        </div>
+    </section>
 
 
-    </div>
+
+    <!-- <div class="container master-container"></div> -->
+
+
+
+
 
     <footer class="footer">
         <div class="container">
-            <p>Copyright 2016 <a href="#"> Sorverteria Itália</a></p>
-
+            <!-- <p>Copyright 2016 <a href="#"> Sorverteria Itália</a></p> -->
         </div>
     </footer>
 
@@ -191,6 +154,28 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wf, s);
         })();
+    </script>
+
+    <!-- SCRIPT PARA BOOTSTRAP SELECT -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var mySelect = $('#first-disabled2');
+
+            $('#special').on('click', function () {
+                mySelect.find('option:selected').prop('disabled', true);
+                mySelect.selectpicker('refresh');
+            });
+
+            $('#special2').on('click', function () {
+                mySelect.find('option:disabled').prop('disabled', false);
+                mySelect.selectpicker('refresh');
+            });
+
+            $('#basic2').selectpicker({
+                liveSearch: true,
+                maxOptions: 1
+            });
+        });
     </script>
 
 </body>
