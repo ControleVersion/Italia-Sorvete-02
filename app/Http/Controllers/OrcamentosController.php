@@ -33,7 +33,11 @@ class OrcamentosController extends Controller
             ->where('cliente_id','=',1)->get();
 
         foreach ($orcamentos as $orcamento){
-            $objeto[] = [ 'nome_produto' => $orcamento->nome_produto, 'preco' =>$orcamento->preco, 'total'=> $total->Totais];
+            $objeto[] = array(
+                'nome_produto' => htmlentities($orcamento->nome_produto),
+                'preco' =>$orcamento->preco,
+                'total'=> $total->Totais
+            );
         }
 
 
