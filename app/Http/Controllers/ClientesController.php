@@ -43,5 +43,9 @@ class ClientesController extends Controller
     	return view('clientes.listar');
     }
 
+    public function pedidos(){
+        return view('clientes.pedidos');
+    }
+
     
 }

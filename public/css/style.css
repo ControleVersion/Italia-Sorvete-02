@@ -348,6 +348,55 @@ margin: 15px 0 0 45px;
     padding: 22px 0 0 55px;
 }
 
+.top-meus-pedidos {
+    background: #ec2800 url(../img/ico-top-meus-pedidos.jpg) no-repeat right 5px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
+    height: 64px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 22px 0 0 55px;
+}
+
+.top-historico {
+    background: #a91c00 url(../img/ico-top-historico.jpg) no-repeat right 13px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
+    height: 64px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 28px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 22px 0 0 55px;
+    margin: 50px 0 0 0;
+}
+
 
 
 /* ========== */
@@ -1011,11 +1060,177 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
 }
 
 
+.box-cadastro-novos-clientes .lnk-voltar {
+    display: block;
+    float: left;
+}
+.box-cadastro-novos-clientes .lnk-voltar a {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0488bf;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.btn-confirmar-cadastro {
+    display: block;
+    float: right;
+    padding: 0 50px 50px 0;
+}
 
 
 
 
 
+
+
+
+
+.box-meus-pedidos {
+    display: block;
+    padding: 0 0 0 0;
+}
+
+.box-meus-pedidos span.txt-confira {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 600;
+    display: block;
+    padding: 40px 0 40px 65px;
+}
+
+.box-meus-pedidos .listagem-meus-pedidos {
+    display: block;
+    clear: both;
+    padding: 0 65px 0 65px;
+}
+
+.box-meus-pedidos .bt-confirmar-pedido {
+    display: block;
+    float: right;
+    padding: 30px 65px 50px 0;
+}
+
+
+
+
+
+
+.lnh-historico-pedido {
+    display: block;
+    border-bottom: 1px solid #ededed;
+    width: 968px;
+    margin: 0 0 0 65px;
+    padding: 30px 0 30px 0;
+    overflow: hidden;
+}
+
+.lnh-historico-pedido .cmp-nm-servico {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 600;
+    width: 300px;
+}
+
+.lnh-historico-pedido .cmp-nm-data {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+    padding: 6px 0 0 0;
+    width: 160px;
+}
+
+.lnh-historico-pedido .cmp-nm-status-pagamento {
+    display: block;
+    float: left;
+    padding: 6px 0 0 0;
+    width: 255px;
+}
+.lnh-historico-pedido .cmp-nm-status-pagamento span.txt-status {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+}
+.lnh-historico-pedido .cmp-nm-status-pagamento span.alerta-status-ok {
+    display: block;
+    float: left;
+    background: url(../img/ico-efetuado.jpg) no-repeat right 3px;
+    padding: 0 23px 0 5px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #52ce54;
+    font-weight: 400;
+ }
+.lnh-historico-pedido .cmp-nm-status-pagamento span.alerta-status-pendente {
+    display: block;
+    float: left;
+    background: url(../img/ico-pendente.jpg) no-repeat right 3px;
+    padding: 0 23px 0 5px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.lnh-historico-pedido .cmp-nm-status-pedido {
+    display: block;
+    float: left;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+    font-weight: 400;
+    width: 95px;
+}
+.lnh-historico-pedido .cmp-nm-status-pedido span.txt-status-finalizado {
+     font-family: 'Dosis', Arial, sans-serif;
+     font-size: 18px;
+     line-height: 20px;
+     color: #52ce54;
+     font-weight: 600;
+ }
+.lnh-historico-pedido .cmp-nm-status-pedido span.txt-status-andamento {
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.lnh-historico-pedido .cmp-nm-detalhes {
+    display: block;
+    float: left;
+    padding: 6px 0 0 40px;
+}
+.lnh-historico-pedido .cmp-nm-detalhes a.lnk-ver-detalhes {
+    display: block;
+    background: url(../img/ico-lupa.jpg) no-repeat right top;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1px;
+    color: #000;
+    font-weight: 400;
+    widht:200px;
+    height: 20px;
+    padding: 8px 25px 0 0;
+}
 
 
 
@@ -1175,6 +1390,93 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
 
 
 
+
+
+    .box-meus-pedidos {
+        display: block;
+        padding: 0 0 0 0;
+    }
+
+    .box-meus-pedidos span.txt-confira {
+        padding: 40px 0 40px 20px;
+    }
+
+    .box-meus-pedidos .listagem-meus-pedidos {
+        display: block;
+        clear: both;
+        padding: 0 20px 0 20px;
+    }
+
+    .box-meus-pedidos .bt-confirmar-pedido {
+        display: block;
+        float: right;
+        padding: 30px 20px 50px 0;
+    }
+
+
+
+
+
+    .lnh-historico-pedido {
+        display: block;
+        border-bottom: 1px solid #ededed;
+        width: 968px;
+        margin: 0 0 0 10px;
+        padding: 30px 0 30px 0;
+        overflow: hidden;
+    }
+
+    .lnh-historico-pedido .cmp-nm-servico {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 600;
+        width: 300px;
+        margin: 0 0 20px 0;
+    }
+
+    .lnh-historico-pedido .cmp-nm-data {
+        display: block;
+        float: left;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        padding: 6px 0 0 0;
+        width: 100px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pagamento {
+        display: block;
+        float: left;
+        padding: 6px 0 20px 0;
+        width: 255px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pedido {
+        display: block;
+        float: left;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        width: 200px;
+        margin: 10px 0 0 0;
+    }
+
+    .lnh-historico-pedido .cmp-nm-detalhes {
+        display: block;
+        float: left;
+        padding: 10px 0 0 0;
+    }
+
+
+
 }
 
 
@@ -1190,6 +1492,31 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
         font-weight: 400;
         text-transform: uppercase;
         padding: 22px 0 0 60px;
+    }
+
+    .top-meus-pedidos {
+        background: #ec2800 url(../img/ico-top-meus-pedidos.jpg) no-repeat right 5px;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 55px;
+    }
+
+    .top-historico {
+        background: #a91c00;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 65px;
+        margin: 50px 0 0 0;
     }
 
 
@@ -1394,6 +1721,167 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
 
 
 
+
+    .box-cadastro-novos-clientes {
+        display: block;
+        margin: 10px 0 0 15px;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-nome {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-codigo-cliente {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-email {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cpf {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone1 {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone2 {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-celular {
+        width: 340px;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cep {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-rua {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-numero {
+        width: 170px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-bairro {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cidade {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-uf {
+        width: 200px;
+    }
+
+    .box-cadastro-novos-clientes .lnk-voltar {
+        display: block;
+    }
+
+    .btn-confirmar-cadastro {
+        display: block;
+        clear: both;
+        float: left;
+        padding: 30px 50px 50px 0;
+    }
+
+
+
+
+
+    .box-meus-pedidos {
+        display: block;
+        padding: 0 0 0 0;
+    }
+
+    .box-meus-pedidos span.txt-confira {
+        font-size: 20px;
+        padding: 40px 0 40px 10px;
+    }
+
+    .box-meus-pedidos .listagem-meus-pedidos {
+        display: block;
+        clear: both;
+        padding: 0 10px 0 10px;
+    }
+
+    .box-meus-pedidos .bt-confirmar-pedido {
+        display: block;
+        float: right;
+        padding: 30px 120px 50px 0;
+    }
+
+
+
+
+
+    .lnh-historico-pedido {
+        display: block;
+        border-bottom: 1px solid #ededed;
+        width: 968px;
+        margin: 0 0 0 10px;
+        padding: 30px 0 30px 0;
+        overflow: hidden;
+    }
+
+    .lnh-historico-pedido .cmp-nm-servico {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-data {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        padding: 6px 0 0 0;
+        width: 200px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pagamento {
+        display: block;
+        float: none;
+        padding: 6px 0 20px 0;
+        width: 255px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pedido {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        width: 200px;
+        margin: 10px 0 0 0;
+    }
+
+    .lnh-historico-pedido .cmp-nm-detalhes {
+        display: block;
+        float: left;
+        padding: 10px 0 0 0;
+    }
+
+
+
+
 }
 
 
@@ -1409,6 +1897,31 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
         font-weight: 400;
         text-transform: uppercase;
         padding: 22px 0 0 60px;
+    }
+
+    .top-meus-pedidos {
+        background: #ec2800 url(../img/ico-top-meus-pedidos.jpg) no-repeat right 5px;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 20px;
+    }
+
+    .top-historico {
+        background: #a91c00;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 45px;
+        margin: 50px 0 0 0;
     }
 
 
@@ -1612,6 +2125,167 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
 
 
 
+
+
+    .box-cadastro-novos-clientes {
+        display: block;
+        margin: 10px 0 0 15px;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-nome {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-codigo-cliente {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-email {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cpf {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone1 {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-telefone2 {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-celular {
+        width: 340px;
+    }
+
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cep {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-rua {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-numero {
+        width: 170px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-bairro {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-cidade {
+        width: 340px;
+    }
+
+    .box-cadastro-novos-clientes .campos-formulario .cmp-uf {
+        width: 200px;
+    }
+
+    .box-cadastro-novos-clientes .lnk-voltar {
+        display: block;
+    }
+
+    .btn-confirmar-cadastro {
+        display: block;
+        clear: both;
+        float: left;
+        padding: 30px 50px 50px 0;
+    }
+
+
+
+
+
+    .box-meus-pedidos {
+        display: block;
+        padding: 0 0 0 0;
+    }
+
+    .box-meus-pedidos span.txt-confira {
+        font-size: 20px;
+        padding: 40px 0 40px 10px;
+    }
+
+    .box-meus-pedidos .listagem-meus-pedidos {
+        display: block;
+        clear: both;
+        padding: 0 10px 0 10px;
+    }
+
+    .box-meus-pedidos .bt-confirmar-pedido {
+        display: block;
+        float: right;
+        padding: 30px 100px 50px 0;
+    }
+
+
+
+
+
+    .lnh-historico-pedido {
+        display: block;
+        border-bottom: 1px solid #ededed;
+        width: 968px;
+        margin: 0 0 0 10px;
+        padding: 30px 0 30px 0;
+        overflow: hidden;
+    }
+
+    .lnh-historico-pedido .cmp-nm-servico {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-data {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        padding: 6px 0 0 0;
+        width: 200px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pagamento {
+        display: block;
+        float: none;
+        padding: 6px 0 20px 0;
+        width: 255px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pedido {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        width: 200px;
+        margin: 10px 0 0 0;
+    }
+
+    .lnh-historico-pedido .cmp-nm-detalhes {
+        display: block;
+        float: left;
+        padding: 10px 0 0 0;
+    }
+
+
+
 }
 
 
@@ -1649,6 +2323,31 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
         font-weight: 400;
         text-transform: uppercase;
         padding: 22px 0 0 50px;
+    }
+
+    .top-meus-pedidos {
+        background: #ec2800;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 65px;
+    }
+
+    .top-historico {
+        background: #a91c00;
+        height: 64px;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 28px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 22px 0 0 15px;
+        margin: 50px 0 0 0;
     }
 
 
@@ -1858,125 +2557,161 @@ div.listagem-produtos-conteudo .linha-itens .it-excluir a:hover {
 
     .box-cadastro-novos-clientes {
         display: block;
-        margin: 10px 0 0 10px;
-    }
-
-    .box-cadastro-novos-clientes span.tit-secao {
-        font-family: 'Dosis', Arial, sans-serif;
-        font-size: 24px;
-        line-height: 20px;
-        color: #000;
-        font-weight: 600;
-        display: block;
-        clear: both;
-        padding: 50px 0 40px 0;
-    }
-
-    .box-cadastro-novos-clientes .campos-formulario {
-        display: block;
-        clear: both;
-    }
-
-    .box-cadastro-novos-clientes .campos-formulario .frm-cadastro-clientes {
-        border-radius: 0;
-        font-family: 'Dosis', Arial, sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 300;
+        margin: 10px 0 0 15px;
     }
 
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-nome {
-        display: block;
-        float: left;
-        width: 569px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-codigo-cliente {
-        display: block;
-        float: left;
-        width: 367px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-email {
-        display: block;
-        float: left;
-        width: 569px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-cpf {
-        display: block;
-        float: left;
-        width: 367px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-telefone1 {
-        display: block;
-        float: left;
         width: 285px;
-        padding: 0 30px 30px 0;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-telefone2 {
-        display: block;
-        float: left;
         width: 285px;
-        padding: 0 30px 30px 0;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-celular {
-        display: block;
-        float: left;
         width: 285px;
-        padding: 0 30px 30px 0;
     }
 
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-cep {
-        display: block;
-        float: left;
-        width: 270px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-rua {
-        display: block;
-        float: left;
-        width: 470px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-numero {
-        display: block;
-        float: left;
         width: 170px;
-        padding: 0 30px 30px 0;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-bairro {
-        display: block;
-        float: left;
         width: 285px;
-        padding: 0 30px 30px 0;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-cidade {
-        display: block;
-        float: left;
-        width: 368px;
-        padding: 0 30px 30px 0;
+        width: 285px;
     }
 
     .box-cadastro-novos-clientes .campos-formulario .cmp-uf {
+        width: 200px;
+    }
+
+    .box-cadastro-novos-clientes .lnk-voltar {
+        display: block;
+    }
+
+    .btn-confirmar-cadastro {
+        display: block;
+        clear: both;
+        float: left;
+        padding: 30px 50px 50px 0;
+    }
+
+
+
+
+
+    .box-meus-pedidos {
+        display: block;
+        padding: 0 0 0 0;
+    }
+
+    .box-meus-pedidos span.txt-confira {
+        font-size: 20px;
+        padding: 40px 0 40px 10px;
+    }
+
+    .box-meus-pedidos .listagem-meus-pedidos {
+        display: block;
+        clear: both;
+        padding: 0 10px 0 10px;
+    }
+
+    .box-meus-pedidos .bt-confirmar-pedido {
+        display: block;
+        float: right;
+        padding: 30px 65px 50px 0;
+    }
+
+
+
+
+
+    .lnh-historico-pedido {
+        display: block;
+        border-bottom: 1px solid #ededed;
+        width: 968px;
+        margin: 0 0 0 10px;
+        padding: 30px 0 30px 0;
+        overflow: hidden;
+    }
+
+    .lnh-historico-pedido .cmp-nm-servico {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000;
+        font-weight: 600;
+        width: 300px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-data {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        padding: 6px 0 0 0;
+        width: 200px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pagamento {
+        display: block;
+        float: none;
+        padding: 6px 0 20px 0;
+        width: 255px;
+    }
+
+    .lnh-historico-pedido .cmp-nm-status-pedido {
+        display: block;
+        float: none;
+        font-family: 'Dosis', Arial, sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        color: #000;
+        font-weight: 400;
+        width: 200px;
+        margin: 10px 0 0 0;
+    }
+
+    .lnh-historico-pedido .cmp-nm-detalhes {
         display: block;
         float: left;
-        width: 200px;
-        padding: 0 30px 30px 0;
+        padding: 10px 0 0 0;
     }
+
 
 
 
